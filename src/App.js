@@ -18,6 +18,7 @@ class App extends React.Component {
 
   render() { 
     return <div className='App'>
+   
       <Quotes QUOTE_DATA={this.state.QUOTE_DATA} />
       <p className='text  text-white'>
                 App by : Pooria Asiabi 😉

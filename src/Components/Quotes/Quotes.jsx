@@ -23,7 +23,11 @@ constructor(props)
     }
     render() { 
         const {title,author} = this.state
+
         return <div className='quote'>
+         <h6 className='text text-danger'>
+      Quote 🤓🤓
+    </h6>
          <QuotesTitle title={title} author={author}/>
             <button onClick={this.handleQuote} className='btn btn-block btn-outline-success'>
             Next 😎🧐🧐
