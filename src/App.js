@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Quotes from "./Components/Quotes/Quotes"
+import DATA from "./DATA"
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props)
+  {
+    super(props);
+    this.state={
+      QUOTE_DATA:DATA
+    }
+  
+  }
+  
+
+
+  render() { 
+    return <div className='App'>
+      <Quotes QUOTE_DATA={this.state.QUOTE_DATA} />
+      <p className='text  text-white'>
+                App by : Pooria Asiabi 😉
+            </p>
+    </div>;
+  }
 }
-
+ 
 export default App;
